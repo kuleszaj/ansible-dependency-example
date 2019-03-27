@@ -7,11 +7,18 @@ You can tweak and run yourself with `ansible-playbook -i localhost site.yml`
 e.g.
 
 ```
+# Role1
 dependencies:
 - name: lc.test-dep
   vars:
     var1: Set in Role1
     var2: Set in Role1
+
+# Role2
+dependencies:
+- name: lc.test-dep
+  vars:
+    var1: Set in Role2  
 ```
 
 Results in:
@@ -53,10 +60,16 @@ localhost                  : ok=5    changed=0    unreachable=0    failed=0
 e.g.
 
 ```
+# Role1
 dependencies:
 - name: lc.test-dep
   var1: Set in Role1
   var2: Set in Role1
+
+# Role2
+dependencies:
+- name: lc.test-dep
+  var1: Set in Role2
 ```
 
 Results in:
