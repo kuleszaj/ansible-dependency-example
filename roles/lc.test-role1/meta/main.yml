@@ -1,0 +1,6 @@
+---
+dependencies:
+- name: lc.test-dep
+  vars:
+    var1: Set in Role1
+    var2: Set in Role1

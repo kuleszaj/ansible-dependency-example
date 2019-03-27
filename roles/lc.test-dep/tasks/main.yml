@@ -1,0 +1,9 @@
+---
+
+- name: This is the test-dep role! I'm a dependency of both Role1 and Role2. Here is the value of var1 --
+  debug:
+    var: var1
+
+- name: This is the test-dep role! I'm a dependency of both Role1 and Role2. Here is the value of var2 --
+  debug:
+    var: var2
